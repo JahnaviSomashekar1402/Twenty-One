@@ -2,17 +2,18 @@ $(document).ready(function(){
 
 // Featured Product
 $("#featured-products .owl-carousel").owlCarousel({
-    loop:true,
-    dots:true,
-    responsive:{
-        0:{
-            items:1
+    loop: true,
+    nav: true,
+    dots: false,
+    responsive : {
+        0: {
+            items: 1
         },
-        600:{
-            items:3
+        600: {
+            items: 3
         },
-        1000:{
-            items:5
+        1000 : {
+            items: 5
         }
     }
 });

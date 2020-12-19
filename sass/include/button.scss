@@ -1,0 +1,44 @@
+/*Custom Buttons*/
+
+.btn-banner {
+	border: none;
+	border-radius: 0%;
+	color: white;
+	background-color: $color-primary;
+}
+
+.btn-banner:hover {
+	border: none;
+	border-radius: 0%;
+	color: white;
+	background-color: #2a2e33;
+}
+
+.btn-banner-light {
+	border: none;
+	border-radius: 0%;
+	color: $color-primary;
+	background-color: white;
+}
+
+.btn-banner-light:hover {
+	border: none;
+	border-radius: 0%;
+	color: $color-primary;
+	background-color: #f2efef;
+}
+
+.btn-coll {
+	border: 3px solid #2a2e33;
+	border-radius: 0%;
+	padding: 10px;
+	background-color: none;
+}
+
+.btn-coll:hover {
+	border: 3px solid #2a2e33;
+	border-radius: 0%;
+	padding: 10px;
+	color: #f2efef;
+	background-color: #2a2e33;
+}

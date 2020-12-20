@@ -97,6 +97,24 @@ button, button:focus {
 }
 
 /*Custom Buttons*/
+.btn-head {
+  border: none;
+  border-radius: 0%;
+  color: white;
+  width: 90px;
+  padding: 7px;
+  background-color: #222529;
+}
+
+.btn-head:hover {
+  border: none;
+  border-radius: 0%;
+  color: white;
+  width: 90px;
+  padding: 7px;
+  background-color: #32373d;
+}
+
 .btn-banner {
   border: none;
   border-radius: 0%;
@@ -138,6 +156,34 @@ button, button:focus {
   padding: 10px;
   color: #f2efef;
   background-color: #2a2e33;
+}
+
+.btn-add {
+  border-radius: 0%;
+  padding: 10px;
+  color: #f2efef;
+  background-color: #2a2e33;
+}
+
+.btn-add:hover {
+  border-radius: 0%;
+  padding: 10px;
+  color: #2a2e33;
+  background-color: #FFDC48;
+}
+
+.btn-sub {
+  border-radius: 75px;
+  padding: 10px;
+  color: #2a2e33;
+  background-color: #FFDC48;
+}
+
+.btn-sub:hover {
+  border-radius: 75px;
+  padding: 10px;
+  color: #2a2e33;
+  background-color: #FFDC48;
 }
 
 /*# sourceMappingURL=style.css.map */

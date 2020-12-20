@@ -59,12 +59,10 @@
                         <a class="nav-link" href="#">CONTACT US</a>
                     </li>
                 </ul>
-                <button type="button" class="btn btn-dark bg-dark font-poppins font-s-14 font-w-600"
-                    style="outline: none">
+                <button type="button" class="btn btn-head font-poppins font-s-14 font-w-600" style="margin-right: 20px">
                     LOGIN
                 </button>
-                <button type="button" class="btn btn-dark bg-dark font-poppins font-s-14 font-w-600"
-                    style="outline: none">
+                <button type="button" class="btn btn-head font-poppins font-s-14 font-w-600" style="margin-right: 20px">
                     CART <span class="badge color-secondary">9</span><span class="visually-hidden">unread
                         messages</span>
                 </button>
@@ -274,15 +272,26 @@
 
         <!--Featured Products-->
         <section id="featured-products">
-            <div class="py-5 m-auto">
+            <div class="py-5">
                 <p class="text-center color-primary font-poppins font-s-30 font-w-800 ">FEATURED PRODUCTS</p>
                 <!--Owl Carousel-->
                 <div class="owl-carousel owl-theme">
-                    <div class="item py-2">
+                    <div class="item p-5">
                         <div class="product font-poppins">
                             <a href="#"><img src="./assets/Logo.png" class="img-fluid"></a>
-                            <div class="text-center">
+                            <div class="text-first">
                                 <h6>JACKET</h6>
+                                <div class="rating text-warning font-s-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₹500</span>
+                                </div>
+                                <button type="submit" class="btn btn-add font-s-12 font-w-700">ADD TO CART</button>
                             </div>
                         </div>
                     </div>
@@ -292,12 +301,75 @@
         </section>
         <!--!Featured Products-->
     </main>
+
     <!--!Main-->
 
+    <!--Footer-->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="row m-auto px-5">
+            <div class="col-lg-3">
+                <h4 class="font-poppins font-s-30 font-w-600 color-secondary">TWENTY ONE</h4><br>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">ADDRESS:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">MSR Complex, Rajajinagar</p>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">PHONE:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">Toll Free (123) 456-7890
+                </p>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">EMAIL:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">cs@twentyone.com</p>
+            </div>
+            <div class="col-lg-4 col-12 py-3">
+                <h4 class="font-poppins font-s-20">NEWSLETTER</h4>
+                <p class="font-poppins font-s-14 text-white-50">Get all the latest information on Events, Sales and
+                    Offers.<br> Sign
+                    up for newsletter today.</p>
+                <form class=" row row-cols form-row">
+                    <div class="col">
+                        <input type="text" class="form-control font-poppins font-s-13"
+                            style="border-radius: 75px;padding: 10px;" placeholder="Email address">
+                    </div>
+                    <div class="col">
+                        <button type="submit"
+                            class="btn btn-sub mb-2 font-poppins font-s-13 font-w-600">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-2 col-12 py-3">
+                <h4 class="font-poppins font-s-20">INFORMATION</h4>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">About
+                        Us</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1"
+                        style="text-decoration: none;">Delivery Information</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Privacy
+                        Policy</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Terms &
+                        Conditions</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 py-3">
+                <h4 class="font-poppins font-s-20">ACCOUNT</h4>
+                <div class="d-flex flex-column flex-wrap">
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">My
+                        Account</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Order
+                        History</a>
+                    <a href="#" class="font-poppins font-s-14 text-white-50 pb-1" style="text-decoration: none;">Wish
+                        List</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+        <p class="font-poppins font-size-14">&copy; Copyrights 2020. Desinged By <a href="#" class="color-secondary"
+                style="text-decoration: none;">JB</a></p>
+    </div>
+    <!--!Footer-->
+
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

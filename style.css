@@ -51,6 +51,10 @@ button, button:focus {
   font-size: 24px;
 }
 
+.font-s-25 {
+  font-size: 25px;
+}
+
 .font-s-30 {
   font-size: 30px;
 }
@@ -93,7 +97,7 @@ button, button:focus {
 }
 
 .color-secondary {
-  color: #FFDC48;
+  color: #ffdc48;
 }
 
 /*Custom Buttons*/
@@ -169,21 +173,21 @@ button, button:focus {
   border-radius: 0%;
   padding: 10px;
   color: #2a2e33;
-  background-color: #FFDC48;
+  background-color: #ffdc48;
 }
 
 .btn-sub {
   border-radius: 75px;
   padding: 10px;
   color: #2a2e33;
-  background-color: #FFDC48;
+  background-color: #ffdc48;
 }
 
 .btn-sub:hover {
   border-radius: 75px;
   padding: 10px;
   color: #2a2e33;
-  background-color: #FFDC48;
+  background-color: #ffdc48;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -76,13 +76,13 @@
         <!--Cart-->
         <section id="cart" class="py-3">
             <div class=" m-auto w-75">
-                <h5 class="font-poppins font-size-20 font-w-700">CART</h5>
 
                 <!--  shopping cart items   -->
                 <div class="row">
-                    <div class="col-sm-8 col-md-12 col-lg-8">
+                    <div class="col-sm-7 col-md-12 col-lg-7">
+                        <h5 class="font-poppins font-s-20 border-bottom font-w-700 py-3">CART</h5>
                         <!-- cart item -->
-                        <div class="row border-top py-3 mt-3">
+                        <div class="row border-bottom py-3 mt-3">
                             <div class="col-sm-2">
                                 <img src="./assets/Logo.png" style="height: 120px;" class="img-fluid">
                             </div>
@@ -92,7 +92,7 @@
 
                                 <!-- Quantity -->
                                 <div class="qty d-flex pt-2">
-                                    <div class="d-flex font-rale " style="width: 120px;">
+                                    <div class="d-flex font-poppins " style="width: 120px;">
                                         <button class="qty_minus border bg-light" style="width: 120px;"
                                             data-id="pro1"><i class="fas fa-minus"></i></button>
                                         <input type="text" data-id="pro1"
@@ -111,14 +111,15 @@
                             </div>
 
                             <div class="col-sm-2 text-right">
-                                <div class="text-center font-poppins font-s-18 font-w-600">
+                                <div class="text-center font-poppins font-s-18 font-w-600 mt-3">
                                     ₹<span class="product_price">152</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- !cart item -->
-                        <!-- cart item -->
-                        <div class="row border-top py-3 mt-3">
+                        <!--!cart item-->
+
+                        <!--cart item-->
+                        <div class="row  border-bottom  py-3 mt-3 mb-3">
                             <div class="col-sm-2">
                                 <img src="./assets/Logo.png" style="height: 120px;" alt="cart1" class="img-fluid">
                             </div>
@@ -130,11 +131,11 @@
                                 <div class="qty d-flex pt-2">
                                     <div class="d-flex font-rale " style="width: 120px;">
                                         <button class="qty_minus border bg-light" style="width: 120px;"
-                                            data-id="pro1"><i class="fas fa-minus"></i></button>
-                                        <input type="text" data-id="pro1"
+                                            data-id="pro2"><i class="fas fa-minus"></i></button>
+                                        <input type="text" data-id="pro2"
                                             class="qty_input text-center font-poppins font-w-800 border px-2 w-100 bg-light"
                                             disabled value="1" placeholder="1">
-                                        <button data-id="pro1" style="width: 120px;" class="qty_plus border bg-light"><i
+                                        <button data-id="pro2" style="width: 120px;" class="qty_plus border bg-light"><i
                                                 class="fas fa-plus"></i></button>
                                     </div>
                                     <button type="submit"
@@ -147,34 +148,76 @@
                             </div>
 
                             <div class="col-sm-2 text-right">
-                                <div class="text-center font-poppins font-s-18 font-w-600">
+                                <div class="text-center font-poppins font-s-18 font-w-600 mt-3">
                                     ₹<span class="product_price">900</span>
                                 </div>
                             </div>
                         </div>
                         <!-- !cart item -->
                     </div>
-                    <!-- subtotal section-->
-                    <div class="col-sm-4 col-md-12 col-lg-4">
-                        <div class="sub-total border text-center m-3">
-                            <h6 class="font-size-12 font-rale text-success py-3"><i class="fas fa-check"></i> Your order
-                                is eligible for FREE Delivery.</h6>
-                            <div class="border-top py-4">
-                                <h5 class="font-baloo font-size-20">Subtotal (2 item):&nbsp; <span
-                                        class="text-danger">$<span class="text-danger" id="deal-price">152.00</span>
-                                    </span> </h5>
-                                <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+
+                    <!-- Subtotal Section-->
+                    <div class="col-sm-5 col-md-12 col-lg-5">
+                        <div class="sub-total" style="border: 2px solid #dddddd;">
+                            <h6 class="font-s-16 font-w-700 font-poppins color-primary py-3" style="margin-left: 25px;">
+                                CART TOTALS</h6>
+                            <div class="py-4">
+                                <h5 class="font-poppins font-w-600 font-s-14"
+                                    style="margin-left: 25px;margin-right:25px;padding-bottom: 15px;border-bottom: 2px solid #dddddd;">
+                                    Subtotal
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        style="text-align-last:right;color: #898989;">₹1800</span>
+                                </h5>
+                                <p class="font-poppins font-s-20 font-w-700"
+                                    style="margin-left: 25px;margin-right:25px;padding-bottom: 15px;padding-right: 200px;">
+                                    Total
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>₹1800</span></p>
+                                <button type="submit" class="btn btn-add font-poppins font-s-15 font-w-700 mt-3"
+                                    style="margin:auto; display: block;width: 90%;">PROCEED
+                                    TO CHECKOUT&nbsp;&nbsp;&nbsp;<i class="far fa-arrow-alt-circle-right"></i></button>
                             </div>
                         </div>
                     </div>
-                    <!-- !subtotal section-->
+                    <!-- !Subtotal Section-->
                 </div>
-                <!--  !shopping cart items   -->
+                <!--  !Cart Items -->
             </div>
         </section>
-        <!-- !Shopping cart section  -->
+        <!-- !Cart Section -->
         </div>
         </section>
+
+        <!--Featured Products-->
+        <section id="featured-products">
+            <div class="py-5">
+                <p class="text-first color-primary font-poppins font-s-20 font-w-800 " style="margin-left: 70px;">
+                    RELATED PRODUCTS</p>
+                <!--Owl Carousel-->
+                <div class="owl-carousel owl-theme">
+                    <div class="item p-5">
+                        <div class="product font-poppins">
+                            <a href="#"><img src="./assets/Logo.png" class="img-fluid"></a>
+                            <div class="text-first">
+                                <h6>JACKET</h6>
+                                <div class="rating text-warning font-s-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₹500</span>
+                                </div>
+                                <button type="submit" class="btn btn-add font-s-12 font-w-700">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--!Owl Carousel-->
+            </div>
+        </section>
+        <!--!Featured Products-->
 
 
     </main>

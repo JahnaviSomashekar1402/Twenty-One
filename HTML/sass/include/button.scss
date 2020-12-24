@@ -62,14 +62,14 @@
 
 .btn-add {
 	border-radius: 0%;
-	padding: 10px;
+	padding: 8px;
 	color: #f2efef;
 	background-color: #2a2e33;
 }
 
 .btn-add:hover {
 	border-radius: 0%;
-	padding: 10px;
+	padding: 8px;
 	color: #2a2e33;
 	background-color: $color-secondary;
 }
@@ -86,4 +86,15 @@
 	padding: 10px;
 	color: #2a2e33;
 	background-color: $color-secondary;
+}
+
+.size-btn {
+	color: #a7a7a7;
+	border-radius: 0%;
+}
+
+.size-btn:hover {
+	background-color: #ffdc48;
+	color: $color-primary;
+	border-radius: 0%;
 }

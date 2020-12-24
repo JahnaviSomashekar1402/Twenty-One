@@ -28,7 +28,7 @@
     <!--Font Awesome-->
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <!--!Custom CSS-->
 </head>
 
@@ -71,22 +71,211 @@
     </nav>
     <!--!Main Navigation-->
 
+    <!--Main-->
+    <main id="main-site">
+        <!--Product detail-->
+        <section id="product" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./assets/Campus Sutra.jpg" alt="CS" class="img-fluid" style="width: 500px;" />
+                    </div>
+                    <div class="col-sm-6 py-5">
+                        <h6 class="font-poppins font-s-30 font-w-700"> Campus Sutra </h6>
+                        <p class="font-poppins font-w-500 font-s-20" style="color:#898989;">Men Black solid
+                            Windcheater Bomber</p>
+                        <div class="d-flex">
+                            <div class="rating text-warning font-size-12 ">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <a href="#" class="px-2 font-poppins font-size-14 " style="color: #6f6f6f;">8,556
+                                ratings</a>
+                        </div>
+                        <hr>
+                        <div class="price">
+                            <h5 class="font-poppins font-s-24 font-w-600">₹ 1999</h5>
+                            <p class="font-poppins font-s-16 font-w-400" style="line-height: 27px;color: #777777;">Black
+                                solid
+                                jacket, has a hooded, 2 pockets, zip closure, long sleeves, straight hem, and polyester
+                                lining.
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="color">
+                                    <h6 class="font-poppins font-s-14 font-w-700">COLOR:</h6>
+                                    <div class="d-flex justify-content-around">
+                                        <div class="p-2" style="background-color: #0f0f1c;"><button
+                                                class="btn font-s-14"></button></div>
+                                        <div class="p-2" style="background-color: #25326d;"><button
+                                                class="btn font-s-14"></button></div>
+                                        <div class="p-2" style="background-color: #660808;"><button
+                                                class="btn font-s-14"></button></div>
+
+                                    </div>
+                                </div>
+
+                                <div class="size my-3">
+                                    <h6 class="font-poppins font-s-14 font-w-700">SIZE:</h6>
+                                    <div class="d-flex  justify-content-between">
+                                        <button id="size1"
+                                            class="btn size-btn p-0 font-s-14 font-w-600 font-poppins border px-3 py-2">S</button>
+                                        <button id="size2"
+                                            class="btn size-btn p-0 font-s-14 font-w-600 font-poppins border px-3 py-2">M</button>
+                                        <button id="size3"
+                                            class="btn size-btn p-0 font-s-14 font-w-600 font-poppins border px-3 py-2">L</button>
+                                        <button id="size4"
+                                            class="btn size-btn p-0 font-s-14 font-w-600 font-poppins border px-3 py-2">XL</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <hr>
+
+                        <div class="row row-cols py-2 font-s-14 font-poppins">
+                            <!--Quantity-->
+                            <div class="d-flex font-poppins " style="width:170px;">
+                                <button class="qty_minus border bg-light p-2" style="width: 150px;" data-id="pro3"><i
+                                        class="fas fa-minus"></i></button>
+                                <input type="text" data-id="pro1"
+                                    class="qty_input text-center font-poppins font-w-800 border p-2 w-100 bg-light"
+                                    disabled value="1" placeholder="1">
+                                <button data-id="pro3" style="width: 150px;" class="qty_plus border bg-light p-2"><i
+                                        class="fas fa-plus"></i></button>
+                            </div>
+                            <!--!Quantity-->
+                            <div class="col">
+                                <button type="submit" class="btn btn-add"><b>ADD TO CART</b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product Description-->
+                    <div class="col-12 py-5">
+                        <h6 class="font-poppins font-s-14 font-w-700">PRODUCT DESCRIPTION</h6>
+                        <hr>
+                        <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Black solid
+                            jacket, has a mock collar, 2 pockets, zip closure, long sleeves, straight hem, and cotton.
+                        </p>
+
+                        <h6 class="font-poppins font-s-14 font-w-700">Size & Fit</h6>
+                        <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">The model (height
+                            6') is wearing a size M</p>
+
+                        <h6 class="font-poppins font-s-14 font-w-700">Material & Care</h6>
+                        <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Cotton
+                            Machine-wash</p>
+
+                        <h6 class="font-poppins font-s-14 font-w-700"> Specifications</h6>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <h7 class="font-poppins font-s-14 font-w-600">Sleeve Length</h7>
+                                    <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Long
+                                        Sleeves</p>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <h7 class="font-poppins font-s-14 font-w-600">Type</h7>
+                                    <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">
+                                        Bomber</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <h7 class="font-poppins font-s-14 font-w-600">Collar</h7>
+                                    <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Mock
+                                        Collar</p>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <h7 class="font-poppins font-s-14 font-w-600">Pattern Type
+                                    </h7>
+                                    <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Solid
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <h7 class="font-poppins font-s-14 font-w-600">Length</h7>
+                                    <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">
+                                        Regular</p>
+                                </div>
+                                <div class="col-xs-6 col-md-3">
+                                    <h7 class="font-poppins font-s-14 font-w-600">Lining Fabric</h7>
+                                    <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">
+                                        Cotton</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--!Product Description-->
+                    </div>
+                    <!--!Product Description-->
+                </div>
+            </div>
+        </section>
+        <!--Product detail-->
+
+        <!--Related Products-->
+        <section id="related-products">
+            <div class="py-5">
+                <p class=" color-primary font-poppins font-s-20 font-w-800 mx-5">RELATED
+                    PRODUCTS
+                </p>
+                <!--Owl Carousel-->
+                <div class="owl-carousel owl-theme">
+                    <div class="item p-5">
+                        <div class="product font-poppins">
+                            <a href="#"><img src="./assets/Logo.png" class="img-fluid"></a>
+                            <div class="text-first">
+                                <h6>JACKET</h6>
+                                <div class="rating text-warning font-s-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>₹500</span>
+                                </div>
+                                <button type="submit" class="btn btn-add font-s-12 font-w-700">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--!Owl Carousel-->
+            </div>
+        </section>
+        <!--!Related Products-->
+
+    </main>
+
     <!--Footer-->
     <footer id="footer" class="bg-dark text-white py-5">
         <div class="row m-auto px-5">
             <div class="col-lg-3">
                 <h4 class="font-poppins font-s-30 font-w-600 color-secondary">TWENTY ONE</h4><br>
-                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">ADDRESS:</p>
-                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">MSR Complex, Rajajinagar</p>
-                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">PHONE:</p>
-                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">Toll Free (123) 456-7890
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">
+                    ADDRESS:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">MSR
+                    Complex, Rajajinagar</p>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">
+                    PHONE:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">Toll Free
+                    (123) 456-7890
                 </p>
-                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">EMAIL:</p>
-                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">cs@twentyone.com</p>
+                <p class="font-s-16 font-poppins text-white font-w-600" style="line-height: 10px;">
+                    EMAIL:</p>
+                <p class="font-s-14 font-poppins text-white-50" style="line-height: 10px;">
+                    cs@twentyone.com</p>
             </div>
             <div class="col-lg-4 col-12 py-3">
                 <h4 class="font-poppins font-s-20">NEWSLETTER</h4>
-                <p class="font-poppins font-s-14 text-white-50">Get all the latest information on Events, Sales and
+                <p class="font-poppins font-s-14 text-white-50">Get all the latest information on
+                    Events, Sales and
                     Offers.<br> Sign
                     up for newsletter today.</p>
                 <form class=" row row-cols form-row">

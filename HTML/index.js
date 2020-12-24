@@ -13,7 +13,24 @@ $("#featured-products .owl-carousel").owlCarousel({
             items: 3
         },
         1000 : {
-            items: 5
+            items: 4
+        }
+    }
+});
+
+$("#related-products .owl-carousel").owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    responsive : {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000 : {
+            items: 4
         }
     }
 });

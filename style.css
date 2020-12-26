@@ -198,9 +198,19 @@ button:focus {
 
 .size-btn:hover {
 	background-color: #ffdc48;
-	color: $color-primary;
+	color:  #222529;
 	border-radius: 0%;
 	border: none;
 }
+
+.active1{
+	background-color: #FFDC48;
+	color:white;
+	border:black;
+  }
+  
+  .active2{
+	border:4px solid  #f3ba00;
+  }
 
 /*# sourceMappingURL=style.css.map */

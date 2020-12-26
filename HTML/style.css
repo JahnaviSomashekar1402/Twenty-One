@@ -209,4 +209,14 @@ button, button:focus {
   border-radius: 0%;
 }
 
+.active1{
+  background-color: #FFDC48;
+  color:white;
+  border:black;
+}
+
+.active2{
+  border:4px solid  #f3ba00;
+}
+
 /*# sourceMappingURL=style.css.map */

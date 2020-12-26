@@ -61,3 +61,10 @@ $qtyminus.click(function(e){
         });
     }
 });
+
+//select size
+$('.size-btn').click(function(e) {
+    $('.size-btn').removeClass('active1');
+    $(this).addClass('active1');
+     });
+

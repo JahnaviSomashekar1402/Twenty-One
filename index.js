@@ -44,7 +44,7 @@ $(document).ready(function(){
     
     //Click on qty plus button
     $qtyplus.click(function(e){
-        let $qtyinput = $(`.qty_input[data-id='${$(this).data("id")}']`);
+        let $qtyinput = $('.qty_input[data-id='${$(this).data("id")}']');
         if($qtyinput.val()>=1 && $qtyinput.val()<=9){
             $qtyinput.val(function(i,oldval){
                 return ++oldval;
@@ -62,3 +62,9 @@ $(document).ready(function(){
         }
     });
     
+    //select size
+    $('.size-btn').click(function(e) {
+    $('.size-btn').removeClass('active1');
+    $(this).addClass('active1');
+     });
+

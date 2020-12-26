@@ -4,6 +4,19 @@
     foreach ($product->getData() as $item) :
         if ($item['item_id'] == $item_id) :
 ?>
+
+<?php
+    //Request method post
+    if($_SERVER['REQUEST_METHOD']=="POST"){
+        if(isset($_POST['product_submit']))
+        {
+        //call method addToCart
+        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+        }
+    }
+?>
+
+
 <section id="product" class="py-3">
     <div class="container">
         <div class="row">
@@ -29,10 +42,8 @@
                 <hr>
                 <div class="price">
                     <h5 class="font-poppins font-s-24 font-w-600">₹<?php echo $item['item_price'] ?? '0'; ?></h5>
-                    <p class="font-poppins font-s-16 font-w-400" style="line-height: 27px;color: #777777;">Black
-                        solid
-                        jacket, has a hooded, 2 pockets, zip closure, long sleeves, straight hem, and polyester
-                        lining.
+                    <p class="font-poppins font-s-16 font-w-400" style="line-height: 27px;color: #777777;">
+                    <?php echo $item['item_desc'] ?? "Not Known"; ?>
                 </div>
                 <div class="row">
                     <div class="col-6">
@@ -57,34 +68,48 @@
 
                 <div class="row row-cols py-2 font-s-14 font-poppins">
                     <!--Quantity-->
-                    <div class="d-flex font-poppins " style="width:170px;">
-                        <button class="qty_minus border bg-light p-2" style="width: 150px;" data-id="pro3"><i
+                    <div class="qty d-flex font-poppins " style="width:170px;">
+                        <button class="qty_minus border bg-light p-2" style="width: 150px;" data-id="pro1"><i
                                 class="fas fa-minus"></i></button>
                         <input type="text" data-id="pro1"
                             class="qty_input text-center font-poppins font-w-800 border p-2 w-100 bg-light" disabled
                             value="1" placeholder="1">
-                        <button data-id="pro3" style="width: 150px;" class="qty_plus border bg-light p-2"><i
+                        <button data-id="pro1" style="width: 150px;" class="qty_plus border bg-light p-2"><i
                                 class="fas fa-plus"></i></button>
                     </div>
                     <!--!Quantity-->
                     <div class="col">
-                        <button type="submit" class="btn btn-add"><b>ADD TO CART</b></button>
+                        <form method="post">
+                            <input type="hidden" name="item_id" value="<?php echo $item['item_id']??'1';?>">
+                            <input type="hidden" name="user_id" value="<?php echo 1;?>">
+                            <button type="submit" name="product_submit" class="btn btn-add font-s-12 font-w-700"><b>ADD TO
+                                CART</b></button>
+                        </form>
                     </div>
+
+
+                    <!--<div class="col">
+                        <button type="submit" class="btn btn-add"><b>ADD TO CART</b></button>
+                    </div>-->
                 </div>
             </div>
             <!--Product Description-->
             <div class="col-12 py-5">
                 <h6 class="font-poppins font-s-14 font-w-700">PRODUCT DESCRIPTION</h6>
                 <hr>
-                <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Black solid
-                    jacket, has a mock collar, 2 pockets, zip closure, long sleeves, straight hem, and cotton.
+                <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">
+                <?php echo $item['item_desc'] ?? "Not Known"; ?>
                 </p>
 
-                <h6 class="font-poppins font-s-14 font-w-700">Size & Fit</h6>
-                <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">The model (height
-                    6') is wearing a size M</p>
+                <h6 class="font-poppins font-s-14 font-w-700">Specifications</h6>
+                <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">
+                <?php 
+                      echo $item['item_spec'];
+                      
+                ?>
+                </p>
 
-                <h6 class="font-poppins font-s-14 font-w-700">Material & Care</h6>
+                <!--<h6 class="font-poppins font-s-14 font-w-700">Material & Care</h6>
                 <p class="font-poppins font-s-14" style="line-height: 27px;color: #6f6f6f;">Cotton
                     Machine-wash</p>
 
